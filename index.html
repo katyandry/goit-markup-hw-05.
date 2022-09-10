@@ -21,7 +21,7 @@
             <nav class="header-nav">
                 <a class="logo-link-header" href="/"><span class="logo-link-web">Web</span>Studio</a>
                 <ul class="header-menu">
-                    <li class="header-menu-item"> <a class="link-header animation" href="#">Студія</a></li>
+                    <li class="header-menu-item"> <a class="link-header animation active" href="#">Студія</a></li>
                     <li class="header-menu-item"> <a class="link-header animation" href="./portfolio.html">Портфоліо</a>
                     </li>
                     <li class="header-menu-item"> <a class="link-header animation" href="#">Контакти</a></li>
@@ -47,7 +47,7 @@
         <section class="page-main-hat">
             <div class="container">
                 <h1 class="page-main-hat-title">Ефективні рішення для <br> вашого бізнесу</h1>
-                <button class="order-button" type="button">Замовити послугу</button>
+                <button class="order-button" type="button" data-modal-open>Замовити послугу</button>
             </div>
         </section>
         <section class="page-main-features section">
@@ -105,12 +105,27 @@
             <div class="container">
                 <h2 class="page-main-works-title">Чим ми займаємося</h2>
                 <ul class="page-main-works-list">
-                    <li class="page-main-works-list-item"><img class="page-main-works-img"
-                            src="./images/works/work1.jpg" alt="Процес написання коду" width="370"></li>
-                    <li class="page-main-works-list-item"><img class="page-main-works-img"
-                            src="./images/works/work2.jpg" alt="Створення макету" width="370"></li>
-                    <li class="page-main-works-list-item"><img class="page-main-works-img"
-                            src="./images/works/work3.jpg" alt="Палітра кольорів" width="370"></li>
+                    <li class="page-main-works-list-item">
+                        <div class="page-main-works-img-wrapper">
+                            <img class="page-main-works-img" src="./images/works/work1.jpg" alt="Процес написання коду"
+                                width="370">
+                            <p class="page-main-works-img-overlay">Десктопні додатки</p>
+                        </div>
+                    </li>
+                    <li class="page-main-works-list-item">
+                        <div class="page-main-works-img-wrapper">
+                            <img class="page-main-works-img" src="./images/works/work2.jpg" alt="Створення макету"
+                                width="370">
+                            <p class="page-main-works-img-overlay">Мобільні додатки</p>
+                        </div>
+                    </li>
+                    <li class="page-main-works-list-item">
+                        <div class="page-main-works-img-wrapper">
+                            <img class="page-main-works-img" src="./images/works/work3.jpg" alt="Палітра кольорів"
+                                width="370">
+                            <p class="page-main-works-img-overlay">Мобільні додатки</p>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -291,7 +306,7 @@
         </section>
         <section class="section">
             <div class="container">
-                <h2 class="page-main-workers-title ">Постійні клієнти</h2>
+                <h2 class="page-main-workers-title">Постійні клієнти</h2>
                 <ul class="page-main-clients-list">
                     <li class="page-main-clients-list-item">
 
@@ -412,4 +427,14 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close-btn" data-modal-close>
+                <svg aria-label="іконка крестику" class="modal-close-btn-icon" width="18px" height="18px">
+                    <use href="./images/sprite.svg#icon-close-black"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
